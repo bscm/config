@@ -4,7 +4,7 @@ config_set()
     local value="${2}"
     local filename="${3}"
 
-    if [[ -z "${filename}" ]] || [[ ! -f "${filename}" ]]; then
+    if [[ -z "${filename}" ]]; then
         return 1
     fi
 
